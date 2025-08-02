@@ -1,0 +1,13 @@
+[package]
+name = "outlook-viewer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tauri = { version = "2.7.0", features = ["tray-icon"] }
+tauri-plugin-notification = "2.3.0"
+tauri-plugin-shell = "2.0.0"
+serde_json = "1.0"
+
+[build-dependencies]
+tauri-build = { version = "2.0", features = ["config-json5"] }
